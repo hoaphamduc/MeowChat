@@ -172,3 +172,92 @@ a:hover {
         padding: 7.5em 1.5em 4em 1.5em;
     }
 }
+
+#confirm-email {
+    width: 90%;
+    height: auto;
+    max-width: 500px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+}
+
+#confirm-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#confirm-text {
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#verify-input {
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #c6c3c3;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#error {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: red;
+}
+
+#verify-submit {
+    width: 80px;
+    display: block;
+    margin: auto;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    border: none;
+    background-color: #59a1f3;
+    color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 17px;
+}
+
+#verify-submit:hover {
+    background-color: #007BFF;
+}
+
+.darken {
+    filter: brightness(0.3);
+}

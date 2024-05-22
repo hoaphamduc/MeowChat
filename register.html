@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Meowchat</title>
+    <title>Register | Meowchat</title>
     <link rel="stylesheet" href="https://www.unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="css/general-style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/sakura.css">
     <link rel="icon" type="image/png" href="Image/Icon/meowchat.svg">
     <meta property="og:title" content="MeowChat" />
@@ -21,10 +21,10 @@
     <div class="btnbg">
     </div>
     
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <div class="login_box">
             <div class="login-header">
-                <span>Login</span>
+                <span>Register</span>
             </div>
             <div class="input_box">
                 <input type="text" id="user" class="input-field" required>
@@ -36,22 +36,31 @@
                 <label for="pass" class="label">Password</label>
                 <i class="bx bx-lock-alt icon"></i>
             </div>
-            <div class="remember-forgot">
-                <div class="remember-me">
-                    <input type="checkbox" id="remember">
-                    <label for="remember"> Remember me</label>
-                </div>
-                <div class="forgot">
-                    <a href="#">Forgot password?</a>
-                </div>
+            <div class="input_box">
+                <input type="password" id="re-pass" class="input-field" required>
+                <label for="re-pass" class="label">Re-enter password</label>
+                <i class="bx bx-lock-alt icon"></i>
             </div>
             <div class="input_box">
-                <input type="submit" class="input-submit" value="Login">
+                <input type="password" id="email" class="input-field" required>
+                <label for="email" class="label">Email</label>
+                <i class="bx bx-envelope icon"></i>
+            </div>
+            <div class="input_box">
+                <input type="submit" class="input-submit" value="Register" onclick="openVerifyEmail()">
             </div>
             <div class="register">
-                <span>Don't have an account? <a href="register.html">Register</a></span>
+                <span>Have an account? <a href="login.html">Login</a></span>
             </div>
         </div>
+    </div>
+
+    <div id="confirm-email">
+        <span id="confirm-title">Verify your Email</span>
+        <span id="confirm-text">Verify code has been sent to your email. Please enter your verify code here!</span>
+        <input type="number" id="verify-input" placeholder="123456" maxlength="6" oninput="limitInputLength(this)" min="0" max="999999">
+        <span id="error">Please enter your verify code!</span>
+        <input type="submit" id="verify-submit" value="Verify">
     </div>
 </body>
 
@@ -342,4 +351,5 @@
     }
     </script>
 <script src="js/sakura.js"></script>
+<script src="js/register.js"></script>
 </html>
