@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="input_box">
-                <input type="submit" class="input-submit" value="Login">
+                <input type="submit" class="input-submit" value="Login" onclick="goToHomepage()">
             </div>
             <div class="register">
                 <span>Don't have an account? <a href="register.html">Register</a></span>
@@ -54,6 +54,12 @@
         </div>
     </div>
 </body>
+
+<script>
+    function goToHomepage() {
+        window.location.href = 'overview.html';
+    }
+</script>
 
 <!-- sakura shader -->
 <script id="sakura_point_vsh" type="x-shader/x_vertex">
