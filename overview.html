@@ -15,11 +15,30 @@
 </head>
 <body>
     <div id="setting">
-
+        <img id="mini-logo" src="Image/Icon/meowchat.svg" alt="mini logo">
+        <span id="meowchat-logo">MeowChat</span>
+        <div id="setting-line"></div>
+        <div id="setting-content">
+            <img id="setting-avatar" src="Image/user-avatar/default.png" alt="avatar">
+            <span id="setting-name">Hoà Phạm Đức</span>
+            <span id="setting-email">hoaphamduc2399@gmail.com</span>
+        </div>
+        <div id="edit-profile">
+            <img class="setting-option-icon" src="Image/Icon/user-regular.svg" alt="Edit profile">
+            <span>Edit profile</span>
+        </div>
+        <div id="open-setting">
+            <img class="setting-option-icon" src="Image/Icon/gear-solid.svg" alt="Setting">
+            <span>Setting</span>
+        </div>
+        <div id="signout">
+            <img class="setting-option-icon" src="Image/Icon/arrow-right-from-bracket-solid.svg" alt="Sign out">
+            <span>Sign out</span>
+        </div>
     </div>
     <div id="list-conversation-container">
         <div id="user-container">
-            <img src="Image/Icon/meowchat.png" alt="avatar" id="user-avatar">
+            <img src="Image/user-avatar/default.png" alt="avatar" id="user-avatar" onclick="toggleSetting()">
             <span id="user-name">Hoà Phạm Đức</span>
             <span id="set-status">Set a status</span>
             <button id="add-new-conversation" title="New chat"></button>
